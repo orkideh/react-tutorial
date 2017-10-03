@@ -1,0 +1,32 @@
+@import "../../var";
+
+.movie-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/movie-page-bg.png");
+  height: 536px;
+}
+
+.movie-header__top-bar {
+  width: 80%;
+  margin: auto;
+  padding-top: 15px;
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+.movie-header__title {
+  color: $themeRed;
+  margin: 0;
+  float: left;
+}
+
+.movie-header__btn {
+  float: right;
+  padding: 5px 15px;
+  background: $themeWhite;
+  color: $themeRed;
+  border: 1px solid $themeBorderGrey;
+  border-radius: 4px;
+}

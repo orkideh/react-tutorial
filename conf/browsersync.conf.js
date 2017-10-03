@@ -12,7 +12,8 @@ module.exports = function () {
     server: {
       baseDir: [
         conf.paths.tmp,
-        conf.paths.src
+        conf.paths.src,
+        conf.paths.root
       ],
       middleware: [
         webpackDevMiddleware(webpackBundler, {

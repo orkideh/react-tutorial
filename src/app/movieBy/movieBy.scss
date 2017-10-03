@@ -1,0 +1,17 @@
+@import "../../var";
+
+.movie-by {
+  width: 100%;
+}
+
+.movie-by__grey-bar {
+  height: 50px;
+  margin: auto;
+  background: $themeBorderGrey;
+}
+
+.movie-by__title {
+  width: 80%;
+  margin: auto;
+  padding-top: 15px;
+}

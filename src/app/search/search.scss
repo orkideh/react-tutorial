@@ -1,0 +1,52 @@
+@import "../../var";
+
+.search {
+  width: 100%;
+  color: $themeWhite;
+  margin-top: 65px;
+}
+
+.search__input {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-bottom: 2px solid $themeRed;
+  background: $themeBlack;
+  color: $themeWhite;
+  text-align: center;
+}
+
+.search__filter-wrapper {
+  margin-top: 25px;
+}
+
+.search__filter-title {
+  font-size: 15px;
+  display: inline-block;
+}
+
+.search__filter {
+  display: inline-block;
+  padding: 4px 12px;
+  background: $themGrey;
+  border-radius: 2px;
+  margin: auto 12px;
+  cursor: pointer;
+}
+
+.search__filter.filter--active {
+  background: $themeRed;
+}
+
+.search__btn {
+  display: inline-block;
+  padding: 8px 65px;
+  background: $themeRed;
+  border: none;
+  color: $themeWhite;
+  border-radius: 2px;
+  margin: auto 12px;
+  cursor: pointer;
+  float: right;
+  margin-right: 0;
+}

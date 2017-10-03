@@ -1,0 +1,15 @@
+@import "../../var";
+
+.footer {
+  background: $themeFooterBGGrey;
+  height: 70px;
+}
+
+.footer__text {
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: $themeRed;
+  display: inline-block;
+}

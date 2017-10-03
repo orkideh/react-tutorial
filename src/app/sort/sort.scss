@@ -1,0 +1,41 @@
+@import "../../var";
+
+.sort-wrapper {
+  height: 56px;
+  background: $themBGGrey;
+}
+
+.sort {
+  margin: auto;
+  width: 80%;
+}
+
+.sort__result-count {
+  display: inline-block;
+  color: $themeTextDark;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.sort__box {
+  float: right;
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: $themeTextDark;
+}
+
+.sort__box-title {
+  display: inline-block;
+  margin: auto 10px;
+}
+
+.sort__box-item {
+  @extend .sort__box-title;
+  cursor: pointer;
+}
+
+.sort__box-item.sort--active {
+  color: $themeRed;
+}
