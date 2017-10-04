@@ -13,7 +13,8 @@ import '../node_modules/normalize.css/normalize.css';
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={Main}/>
-    <Route path="/movie" component={MoviePage}/>
+    <Route path="/search/:query" component={Main}/>
+    <Route path="/film/:name" component={MoviePage}/>
   </Router>,
   document.getElementById('container')
 );

@@ -1,3 +1,5 @@
+@import "../../var";
+
 .movie-list {
   width: 100%;
   display: flex;
@@ -6,3 +8,6 @@
   flex-wrap: wrap;
 }
 
+.movie-list__not-found {
+  color: $themGrey;
+}

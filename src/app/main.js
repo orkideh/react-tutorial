@@ -11,12 +11,20 @@ const styles = {
 };
 
 export class Main extends Component {
+  constructor(params) {
+    super(params);
+    this.state = {
+      movies: [],
+      searchQuery: params.routeParams.query
+    };
+  }
+
   render() {
     return (
       <div style={styles.container}>
-        <Header/>
-        <Sort/>
-        <Moivelist/>
+        <Header search={this.state.searchQuery}/>
+        <Sort movies={this.state.movies}/>
+        <Moivelist movies={this.state.movies}/>
         <Footer/>
       </div>
     );

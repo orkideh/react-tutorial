@@ -65,7 +65,8 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.join(process.cwd(), conf.paths.tmp),
-    filename: 'index.js'
+    filename: 'index.js',
+    publicPath: 'http://localhost:3000/'
   },
   entry: [
     'webpack/hot/dev-server',
